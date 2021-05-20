@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Prompt from '@babbage/react-prompt';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Prompt appName='Hello World app'>
+      <App />
+    </Prompt>
   </React.StrictMode>,
   document.getElementById('root')
 );
