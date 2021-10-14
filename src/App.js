@@ -19,13 +19,12 @@ function App () {
             v: 3,
             q: {
               collection: 'hello',
-              find: {},
-              limit: 10
+              find: {}
             }
           }
         }
       })
-      setMessages(result)
+      setMessages(result.reverse())
     })()
   }, [])
 
@@ -50,8 +49,8 @@ function App () {
           return
         }
         setMessages(oldMessages => ([
-          ...oldMessages,
-          data.data
+          data.data,
+          ...oldMessages
         ]))
       }
     })()
@@ -91,7 +90,7 @@ function App () {
         btoa(senderID),
         btoa(postText)
       ]
-    })
+    }, false)
 
     setPostText('')
     console.log(result)
