@@ -89,7 +89,8 @@ function App () {
         btoa('1He11omzQsAeYa2JUj52sFZRQEsSzPFNZx'),
         btoa(senderID),
         btoa(postText)
-      ]
+      ],
+      bridge: ['1Prq8NfyBH2mGaGG3jPcbfgH4JXj5aK9sN'] // HWP
     }, false)
 
     setPostText('')
